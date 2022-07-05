@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bus"
+    tools:context=".register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/SignupScrollLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="25dp">
+
+                <TextView
+                    android:id="@+id/txtViewBusSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="BUS REGISTRATION"
+                    android:textStyle="bold"
+                    android:textColor="#FDB0273C"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtViewBusno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:padding="10dp"
+                    android:text="Bus register no"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                     />
+
+                <EditText
+                    android:id="@+id/edtTextBusno"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/circle"
+                    android:textColor="@color/white"
+                    android:textColorHint="#C6D6D6"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="20dp"
+                    android:inputType="textPersonName"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txtViewBusFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="From"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtViewEmailSignup"
+                    app:layout_constraintTop_toBottomOf="@+id/edtTextEmailSignup" />
+
+                <EditText
+                    android:id="@+id/edtTextBusFrom"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/circle"
+                    android:textColor="@color/white"
+                    android:textColorHint="#5E6060"
+                    android:ems="10"
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/edtTextNameSignup"
+                    app:layout_constraintStart_toStartOf="@+id/edtTextNameSignup"
+                    app:layout_constraintTop_toBottomOf="@+id/txtViewEmailSignup" />
+
+                <TextView
+                    android:id="@+id/txtViewBusTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="To"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtViewEmailSignup"
+                    app:layout_constraintTop_toBottomOf="@+id/edtTextEmailSignup" />
+
+                <EditText
+                    android:id="@+id/edtTextBusTo"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/circle"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:textColorHint="#5E6060"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    app:layout_constraintEnd_toEndOf="@id/edtTextEmailSignup"
+                    app:layout_constraintStart_toStartOf="@id/edtTextEmailSignup"
+                    app:layout_constraintTop_toBottomOf="@id/txtViewMobileSignup" />
+
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="SAVE"
+                    android:layout_gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtTextConfirmPasswordSignup" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

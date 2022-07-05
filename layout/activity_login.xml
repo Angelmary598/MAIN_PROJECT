@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/road2"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp"
+    tools:context=".login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#5fff"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="25dp">
+
+
+        <EditText
+            android:id="@+id/edtTextEmailLogin"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn"
+            android:ems="10"
+            android:hint="  Email"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColor="#74716A"
+            android:textColorHint="#5E6060"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/edtTextPasswordLogin"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn"
+            android:ems="10"
+            android:hint="  Password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="#74716A"
+            android:textColorHint="#5E6060"
+            app:layout_constraintEnd_toEndOf="@+id/edtTextEmailLogin"
+            app:layout_constraintStart_toStartOf="@+id/edtTextEmailLogin"
+            app:layout_constraintTop_toBottomOf="@id/edtTextEmailLogin" />
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/btncolor"
+            android:fontFamily="serif-monospace"
+            android:text="LOGIN"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtTextPasswordLogin" />
+
+        <View
+            android:id="@+id/dividerView"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="25dp"
+            android:background="#3fff"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <TextView
+            android:id="@+id/txtViewSignupLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radial_bg"
+            android:clickable="true"
+            android:paddingVertical="10dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+            app:layout_constraintStart_toStartOf="@+id/btnLogin"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+        <RadioGroup
+            android:id="@+id/login_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#859C9C9C"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtTextPasswordLogin">
+
+            <RadioButton
+                android:id="@+id/client"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:buttonTint="#FFFFFF"
+                android:checked="true"
+                android:text="Client"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/conductor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:text="Conductor"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
